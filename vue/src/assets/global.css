@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+.pd-10 {
+    padding: 10px 0;
+}
+
+.headerClass {
+    background-color: cornflowerblue !important;
+}
+
+.el-container {
+    min-height: 100vh;
+    border: 1px solid #eee;
+}
+
+.el-aside {
+    background-color: rgb(238, 241, 246);
+    height: 100%;
+}
+
+.el-header {
+    border-bottom: 1px solid #ccc;
+    line-height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
