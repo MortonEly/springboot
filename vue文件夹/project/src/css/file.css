@@ -1,0 +1,17 @@
+.filebutton {
+    margin-left: 5px;
+    flex: 1;
+    width: 100%;
+}
+
+.subjectbutton {
+    /* 自定义按钮样式 */
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    /* background-color: #1890ff;
+        color: white; */
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}

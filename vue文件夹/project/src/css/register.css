@@ -1,0 +1,34 @@
+/* 使用深度作用选择器确保样式覆盖 */
+.button-group ::v-deep .el-button {
+    margin-right: 50px;
+    /* 设置按钮宽度 */
+}
+
+.link-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link-container router-link {
+    margin-right: 20px;
+}
+
+.register {
+    width: 100%;
+    height: 740px;
+    background-image: url('../assets/registerbackground.png');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.register-wrap {
+    background-image: url('../assets/background1.png');
+    background-size: cover;
+    width: 400px;
+    height: 500px;
+    margin: 130px auto 215px auto;
+    /* 调整这一行 */
+    overflow: hidden;
+    padding-top: 10px;
+    line-height: 23px;
+}

@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.ml-5 {
+  margin-left: 10px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.pd-10 {
+  padding: 10px 0;
+}
+
+.m-10 {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+.el-table__header th.headerBag {
+  background-color: cornflowerblue;
+}
+
+.headerBag .cell {
+  text-align: center;
+  color: black;
+}
+
+.Userel-button {
+  display: inline-block !important;
+  width: 100px !important;
+  margin-left: 10px !important;
+}
+
+.user-perosnal {
+  font-size: 15px;
+  padding: 10px, 0px;
+}
+
+.user-perosnal-router {
+  text-decoration: none;
+  color: #606266;
+}
+
+#my-button {
+  width: 100px !important;
+  margin-left: 50px !important;
+}
+
+
+.parent-container {
+  display: flex;
+  align-items: center;
+}
+
+.Usern {
+  display: inline-block;
+  vertical-align: middle;
+  top: 40px
+}
+
+.downbutton .custom-button {
+  width: 50% !important;
+  /* 设置宽度为50% */
+  margin-left: 50px !important;
+  /* 左边距为-50px */
+}
+
+.dropdown-menu {
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.manage-personal {
+  font-size: 15px;
+  padding: 5px 0;
+}
