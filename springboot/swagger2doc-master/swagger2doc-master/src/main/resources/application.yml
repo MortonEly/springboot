@@ -1,0 +1,22 @@
+server:
+  port: 8089
+  tomcat:
+    max-threads: 800
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: swagger2word
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    servlet:
+      content-type: text/html
+    enabled: true
+    encoding: UTF-8
+    mode: HTML5
+
+
+
+

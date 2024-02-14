@@ -1,0 +1,4 @@
+== Chapter of manual content 2
+
+This is  chapter of manual content 2
+
