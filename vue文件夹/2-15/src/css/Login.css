@@ -1,0 +1,62 @@
+.login {
+    width: 100%;
+    height: 740px;
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.login-wrap {
+    background-image: url('../assets/background1.png');
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    margin: 215px auto;
+    overflow: hidden;
+    padding-top: 10px;
+    line-height: 23px;
+}
+
+#password {
+    margin-bottom: 5px;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    color: #0babeab8;
+    font-size: 24px;
+}
+
+hr {
+    background-color: #444;
+    margin: 20px auto;
+}
+
+a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 15px;
+}
+
+a:hover {
+    color: coral;
+}
+
+.el-button {
+    width: 50%;
+    margin-left: -50px;
+}
+
+.link-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link-container router-link {
+    margin-right: 20px;
+}
