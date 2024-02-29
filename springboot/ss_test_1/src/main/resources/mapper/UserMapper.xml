@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.duck.mapper.UserMapper">
+
+    <!-- 根据角色id查找菜单 -->
+    <select id="getNavMenuIds" resultType="java.lang.Long">
+        SELECT DISTINCT
+            rm.menu_id
+        FROM
+            sys_user_role ur
+                LEFT JOIN sys_role_menu rm ON ur.role_id = rm.role_id
+        WHERE
+            ur.user_id = #{userId} and ur.deleted = 0 and rm.deleted = 0
+    </select>
+
+    <!--  根据菜单的变更清除缓存 -->
+    <select id="listByMenuId" resultType="com.duck.pojo.User">
+        select distinct
+            su.*
+        from
+          sys_user_role sur
+        left join sys_role_menu srm on sur.role_id = srm.role_id
+        left join sys_user su on sur.user_id = su.id
+        where
+            srm.menu_id = #{menuId}
+    </select>
+</mapper>
