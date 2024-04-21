@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    height: 100vh;
+}
+
+.exporttable {
+    border: solid 3px #c0c0c0;
+}
+
+.el-container {
+    margin-bottom: 0;
+}
+
+.el-menu {
+    height: 100%;
+}
+
+.btn {
+    width: 120px !important;
+    height: 40px !important;
+    padding: 0 10px !important;
+    font-size: 15px;
+    font-family: 楷体
+}
