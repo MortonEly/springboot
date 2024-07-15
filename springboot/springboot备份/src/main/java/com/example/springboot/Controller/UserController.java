@@ -49,12 +49,21 @@ public class UserController {
          */
         @PostMapping("/save")
         public Result saveOrUpdate(@RequestBody User user) {
-                QueryWrapper<User> queryWrapper = new QueryWrapper<>();
-                queryWrapper.eq("username", user.getUsername());
-                User existUser = userService.getOne(queryWrapper);
-                // 检查是否存在具有相同用户名但不同ID的用户（对于更新操作）
-                if (existUser != null && !existUser.getId().equals(user.getId())) {
-                        return Result.error(405, user.getUsername() + "用户名已存在，请修改");
+                if(user.getId()==null){
+                        QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+                        queryWrapper.eq("username", user.getUsername());
+                        User existUser = userService.getOne(queryWrapper);
+                        if (null!=existUser){
+                                return Result.error(405, "用户名"+user.getUsername() + "已存在，请修改");
+                        }
+                }else{
+                        QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+                        queryWrapper.eq("username", user.getUsername());
+                        User existUser = userService.getOne(queryWrapper);
+                        // 检查是否存在具有相同用户名但不同ID的用户（对于更新操作）
+                        if (existUser != null && !existUser.getId().equals(user.getId())) {
+                                return Result.error(405, user.getUsername() + "用户名已存在，请修改");
+                        }
                 }
 
                 // 执行保存或更新操作
